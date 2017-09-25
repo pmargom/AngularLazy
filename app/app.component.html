@@ -1,0 +1,26 @@
+<div class="app">
+  <header>
+    <!-- <img src="/img/logo.svg"> -->
+    <h1>Angular 2/4 - Lazy Loading Demo</h1>
+  </header>
+  <div class="app__content">
+    <nav>
+      <a
+        [routerLink]="['/']"
+        routerLinkActive="active">
+        Home
+      </a>
+      <a
+        [routerLink]="['/eager']"
+        routerLinkActive="active">
+        eager
+      </a>
+      <a
+        [routerLink]="['/lazy']"
+        routerLinkActive="active">
+        lazy
+      </a>
+    </nav>
+    <router-outlet></router-outlet>
+  </div>
+</div>
